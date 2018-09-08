@@ -24,3 +24,23 @@ node{
  }*/
 }
 
+/*
+#!groovy
+node (label: 'flipkart-node') {
+    currentBuild.result = "SUCCESS"
+    try {
+       stage('Checkout'){
+         //checkout scm
+         git credentialsId: '4e0f2682-d66f-4ffa-bf99-8b1a9dbeb3e0', url: 'https://github.com/devopstrainingblr/Maven-Web-Project.git'
+
+       }
+    }  
+    
+   catch (err) {
+         currentBuild.result = "FAILURE"
+        
+        throw err
+    } 
+    
+    */
+}
