@@ -36,7 +36,7 @@
 
 	<!-- Default, run this target -->
 	<target name="main" depends="clean, compile, jar,run" >
-		<echo> Build done </echo>
+		<echo> Build is done </echo>
 	</target>
 	    <target name="run">
          <java jar="${dist.dir}/${project.name}-${DSTAMP}.jar" fork="true"/>
